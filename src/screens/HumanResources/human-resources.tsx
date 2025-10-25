@@ -4,10 +4,12 @@ import NavigationBar from '@/components/NavigationBar'
 
 const HumanResources = () => {
   return (
-    <div className='flex flex-col border-2 border-solid border-red-500'>
+    <div className='flex flex-col'>
         <NavigationBar />
-        <SideBar />
-        <MainContent />
+        <div className='flex flex-row px-6 gap-6 pt-12'>
+          <SideBar />
+          <MainContent />
+        </div>
     </div>
   )
 }
